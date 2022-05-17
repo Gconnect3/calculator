@@ -1,0 +1,77 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+div.calc {
+    display: flex;
+    max-width: 50.3rem;
+    min-width: 50.25rem;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 25px;
+}
+
+output {
+   margin: 0 1.5rem;
+}
+
+.num {
+    background-color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    
+    text-decoration: none;
+    text-align: center;
+}
+
+ul {
+    /*display: flex;
+    flex-flow: row wrap;*/
+    max-width: 80%;
+    margin: 2rem auto;
+
+
+}
+ul li {
+    display:inline-block;
+    width: 8rem;
+    height: 8rem;
+    padding: 1.5rem;
+    font-size: 4rem;
+}
+ul li:hover {
+    background-color: wheat;
+    cursor: pointer;
+
+}
+.nums {
+    display: flex;
+    width: 90%;
+
+}
+
+.answers {
+    background-color: white;
+    width: 80%;
+    display: flex;
+    margin: 2rem auto;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 25px;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 1rem;
+}

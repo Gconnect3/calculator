@@ -9,9 +9,11 @@ html {
 
 body {
     font-size: 1.6rem;
+    width: 90vh;
 }
 
 div.calc {
+    margin: auto;
     display: flex;
     max-width: 50.3rem;
     min-width: 50.25rem;
@@ -37,13 +39,11 @@ output {
 }
 
 ul {
-    /*display: flex;
-    flex-flow: row wrap;*/
-    max-width: 80%;
+
+    max-width: 90%;
     margin: 2rem auto;
-
-
 }
+
 ul li {
     display:inline-block;
     width: 8rem;
@@ -74,4 +74,18 @@ ul li:hover {
     word-wrap: break-word;
     word-break: break-all;
     padding: 1rem;
+}
+
+.ac {
+    border-radius: 5px;
+    width: 16rem;
+    margin: .5rem 0;
+}
+
+.del {
+    border-radius: 5px;
+    margin: .5rem 0;
+    font-weight: 500;
+    padding: 2.5rem 1rem;
+    font-size: 3rem;
 }

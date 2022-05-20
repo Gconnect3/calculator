@@ -29,15 +29,6 @@ output {
    margin: 0 1.5rem;
 }
 
-.num {
-    background-color: white;
-    border-radius: 50%;
-    font-weight: 700;
-    
-    text-decoration: none;
-    text-align: center;
-}
-
 ul {
 
     max-width: 90%;
@@ -50,16 +41,20 @@ ul li {
     height: 8rem;
     padding: 1.5rem;
     font-size: 4rem;
+    margin: .5rem 0 0 0;
+    background-color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
 }
 ul li:hover {
     background-color: wheat;
     cursor: pointer;
-
 }
 .nums {
     display: flex;
     width: 90%;
-
 }
 
 .answers {

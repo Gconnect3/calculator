@@ -48,9 +48,10 @@ class Calculator {
     this.previousOperand = ""
     }
     appendNumber(number){
-        if (this.currentOperand === "."){return this.currentOperand = "0." + number.toString();}
-        else if (number === "." && this.currentOperand.includes(".")) {return}
-        else if(this.currentOperand === "0") {return this.currentOperand = "0." + number.toString()}
+        if (number === "." && this.currentOperand.includes(".")) {return}
+        else if (this.currentOperand === "."){return this.currentOperand = "0." + number.toString();}
+        else if(this.currentOperand === "0" && number === ".") {return this.currentOperand = "0.";}
+        else if(this.currentOperand === "0") {return this.currentOperand = "0." + number.toString();}
         this.currentOperand = this.currentOperand.toString() + number.toString()
     }
     chooseOperation(operation){

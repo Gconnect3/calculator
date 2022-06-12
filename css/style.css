@@ -1,6 +1,8 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    zoom:80%;
+    zoom: 0.8;
 }
 
 *, *::before, *::after {

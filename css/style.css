@@ -1,8 +1,6 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
-    zoom:80%;
-    zoom: 0.8;
 }
 
 *, *::before, *::after {
@@ -11,9 +9,10 @@ html {
 
 body {
     font-size: 1.6rem;
-    width: 90vw;
-    height: 100vh;
+    transform-origin: top left;
+    transform: scale(50%);
     margin: 0;
+   
 }
 
 div.calc {
@@ -88,4 +87,12 @@ ul li:hover {
     font-weight: 500;
     padding: 2.5rem 1rem;
     font-size: 3rem;
+}
+
+.black {
+    background-color: black;
+}
+
+.black:hover {
+    background-color: black;
 }

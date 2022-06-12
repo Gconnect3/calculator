@@ -48,7 +48,9 @@ class Calculator {
     this.previousOperand = ""
     }
     appendNumber(number){
-        if (number === "." && this.currentOperand.includes(".")) return
+        if (this.currentOperand === "."){return this.currentOperand = "0." + number.toString();}
+        else if (number === "." && this.currentOperand.includes(".")) {return}
+        else if(this.currentOperand === "0") {return this.currentOperand = "0." + number.toString()}
         this.currentOperand = this.currentOperand.toString() + number.toString()
     }
     chooseOperation(operation){
@@ -61,7 +63,10 @@ class Calculator {
     
     updateDisplay(){
         this.currentOperandText.innerText = this.currentOperand
-       this.previousOperandText.innerText = this.previousOperand
+        if(this.operation != null){
+            this.previousOperandText.innerText = `${this.previousOperand} ${this.operation}`
+        } else {this.previousOperandText.innerText = ""}
+       
     }
 }
 

@@ -9,7 +9,8 @@ html {
 
 body {
     font-size: 1.6rem;
-    width: 90vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 div.calc {
@@ -60,6 +61,7 @@ ul li:hover {
 .answers {
     background-color: white;
     width: 80%;
+    min-height: 10rem;
     height: auto;
     display: flex;
     margin: 2rem auto;
